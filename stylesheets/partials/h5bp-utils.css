@@ -1,0 +1,164 @@
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../../sass/partials/h5bp-utils.scss */
+.ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 21, ../../sass/partials/h5bp-utils.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 30, ../../sass/partials/h5bp-utils.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 47, ../../sass/partials/h5bp-utils.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 60, ../../sass/partials/h5bp-utils.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Contain floats: h5bp.com/q
+ */
+/* line 69, ../../sass/partials/h5bp-utils.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 74, ../../sass/partials/h5bp-utils.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 78, ../../sass/partials/h5bp-utils.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 90, ../../sass/partials/h5bp-utils.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 98, ../../sass/partials/h5bp-utils.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 102, ../../sass/partials/h5bp-utils.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 106, ../../sass/partials/h5bp-utils.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 116, ../../sass/partials/h5bp-utils.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 121, ../../sass/partials/h5bp-utils.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 126, ../../sass/partials/h5bp-utils.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 131, ../../sass/partials/h5bp-utils.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 135, ../../sass/partials/h5bp-utils.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 145, ../../sass/partials/h5bp-utils.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 151, ../../sass/partials/h5bp-utils.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

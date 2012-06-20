@@ -1,0 +1,617 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* line 28, ../sass/partials/h5bp-reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 34, ../sass/partials/h5bp-reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 40, ../sass/partials/h5bp-reset.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 44, ../sass/partials/h5bp-reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 58, ../sass/partials/h5bp-reset.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 68, ../sass/partials/h5bp-reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 73, ../sass/partials/h5bp-reset.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 85, ../sass/partials/h5bp-reset.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 90, ../sass/partials/h5bp-reset.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 100, ../sass/partials/h5bp-reset.scss */
+a {
+  color: #00e;
+}
+
+/* line 104, ../sass/partials/h5bp-reset.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 108, ../sass/partials/h5bp-reset.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 112, ../sass/partials/h5bp-reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improve readability when focused and hovered in all browsers: h5bp.com/h
+ */
+/* line 121, ../sass/partials/h5bp-reset.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/* line 130, ../sass/partials/h5bp-reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 135, ../sass/partials/h5bp-reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 139, ../sass/partials/h5bp-reset.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 143, ../sass/partials/h5bp-reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 147, ../sass/partials/h5bp-reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 156, ../sass/partials/h5bp-reset.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 162, ../sass/partials/h5bp-reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+ * Redeclare monospace font family: h5bp.com/j
+ */
+/* line 176, ../sass/partials/h5bp-reset.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improve readability of pre-formatted text
+ */
+/* line 186, ../sass/partials/h5bp-reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 192, ../sass/partials/h5bp-reset.scss */
+q {
+  quotes: none;
+}
+
+/* line 197, ../sass/partials/h5bp-reset.scss */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 202, ../sass/partials/h5bp-reset.scss */
+small {
+  font-size: 85%;
+}
+
+/*
+ * Position subscript and superscript content without affecting line-height: h5bp.com/k
+ */
+/* line 211, ../sass/partials/h5bp-reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 218, ../sass/partials/h5bp-reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 222, ../sass/partials/h5bp-reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 232, ../sass/partials/h5bp-reset.scss */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 237, ../sass/partials/h5bp-reset.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 242, ../sass/partials/h5bp-reset.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+/* line 259, ../sass/partials/h5bp-reset.scss */
+img {
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+/* line 269, ../sass/partials/h5bp-reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/* line 278, ../sass/partials/h5bp-reset.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* line 287, ../sass/partials/h5bp-reset.scss */
+form {
+  margin: 0;
+}
+
+/* line 291, ../sass/partials/h5bp-reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Indicate that 'label' will shift focus to the associated form element
+ */
+/* line 301, ../sass/partials/h5bp-reset.scss */
+label {
+  cursor: pointer;
+}
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+/* line 310, ../sass/partials/h5bp-reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+/* line 326, ../sass/partials/h5bp-reset.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+/* line 338, ../sass/partials/h5bp-reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+/* line 351, ../sass/partials/h5bp-reset.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 362, ../sass/partials/h5bp-reset.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * Consistent box sizing and appearance
+ */
+/* line 371, ../sass/partials/h5bp-reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 378, ../sass/partials/h5bp-reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 386, ../sass/partials/h5bp-reset.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+/* line 395, ../sass/partials/h5bp-reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+/* line 405, ../sass/partials/h5bp-reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* line 416, ../sass/partials/h5bp-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, ../sass/partials/h5bp-reset.scss */
+td {
+  vertical-align: top;
+}
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+/* line 430, ../sass/partials/h5bp-reset.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../sass/partials/h5bp-utils.scss */
+.ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 21, ../sass/partials/h5bp-utils.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 30, ../sass/partials/h5bp-utils.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 47, ../sass/partials/h5bp-utils.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 60, ../sass/partials/h5bp-utils.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Contain floats: h5bp.com/q
+ */
+/* line 69, ../sass/partials/h5bp-utils.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 74, ../sass/partials/h5bp-utils.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 78, ../sass/partials/h5bp-utils.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 90, ../sass/partials/h5bp-utils.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 98, ../sass/partials/h5bp-utils.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 102, ../sass/partials/h5bp-utils.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 106, ../sass/partials/h5bp-utils.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 116, ../sass/partials/h5bp-utils.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 121, ../sass/partials/h5bp-utils.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 126, ../sass/partials/h5bp-utils.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 131, ../sass/partials/h5bp-utils.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 135, ../sass/partials/h5bp-utils.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 145, ../sass/partials/h5bp-utils.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 151, ../sass/partials/h5bp-utils.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
